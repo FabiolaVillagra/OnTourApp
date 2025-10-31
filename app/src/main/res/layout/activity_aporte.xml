@@ -1,0 +1,46 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Uso de Recurso Nativo: Comprobante"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvInstruccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Presiona el botón para tomar una foto de tu comprobante de pago."
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnTomarFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tomar Foto del Comprobante"/>
+
+    <ImageView
+        android:id="@+id/ivComprobante"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="16dp"
+        android:background="#EEEEEE"
+        android:contentDescription="Vista previa del comprobante de pago"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSimularAporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Simular Registro de Aporte"
+        android:enabled="false"/>
+</LinearLayout>
